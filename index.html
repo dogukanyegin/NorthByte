@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF--8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NorthByte - Teknoloji & Siber Güvenlik</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        :root {
+            --primary-color: #00aaff;
+            --dark-bg: #1a1a1a;
+            --light-bg: #2c2c2c;
+            --text-color: #f0f0f0;
+            --text-muted: #a0a0a0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 0 2rem 0;
+            border-bottom: 1px solid var(--light-bg);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        header h1 span {
+            color: var(--primary-color);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 1rem 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+        
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--light-bg);
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2.5rem;
+            color: #fff;
+        }
+
+        /* Language Tabs */
+        .lang-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .lang-tab {
+            background: var(--light-bg);
+            border: none;
+            color: var(--text-color);
+            padding: 0.8rem 1.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .lang-tab:hover {
+            background-color: #3a3a3a;
+        }
+        
+        .lang-tab.active {
+            background-color: var(--primary-color);
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .lang-content {
+            display: none;
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+        
+        .lang-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .lang-content ul {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+
+        .lang-content ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .lang-content p {
+            margin-top: 1rem;
+            color: var(--text-muted);
+        }
+        
+        .lang-content strong {
+            color: var(--text-color);
+        }
+
+        /* Focus Area Cards */
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 170, 255, 0.1);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .card p {
+            color: var(--text-muted);
+        }
+
+        /* Legal & Contact Section */
+        .info-section {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .info-section p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+        
+        .info-section strong {
+            color: var(--text-color);
+        }
+        
+        .info-section .brand {
+             color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>North<span>Byte</span></h1>
+            <p>Independent Technology, Cybersecurity, and Game Development</p>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#focus">Focus Areas</a>
+        <a href="#legal">Legal Notice</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main class="container">
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About NorthByte</h2>
+            <div class="lang-tabs">
+                <button class="lang-tab active" onclick="switchLanguage('tr')">🇹🇷 Türkçe</button>
+                <button class="lang-tab" onclick="switchLanguage('en')">🇬🇧 English</button>
+                <button class="lang-tab" onclick="switchLanguage('no')">🇳🇴 Norsk</button>
+                <button class="lang-tab" onclick="switchLanguage('se')">🇸🇪 Svenska</button>
+                <button class="lang-tab" onclick="switchLanguage('da')">🇩🇰 Dansk</button>
+                <button class="lang-tab" onclick="switchLanguage('is')">🇮🇸 Íslenska</button>
+                <button class="lang-tab" onclick="switchLanguage('fo')">🇫🇴 Føroyskt</button>
+            </div>
+
+            <!-- Turkish Content -->
+            <div id="lang-tr" class="lang-content active">
+                <h3>NorthByte Hakkında</h3>
+                <p>NorthByte; <strong>siber güvenlik, bug bounty, OSINT, oyun geliştirme ve yayıncılık</strong> alanlarında faaliyet gösteren <strong>kişisel bir teknoloji markasıdır</strong>.</p>
+                <ul>
+                    <li>Siber güvenlik araştırmaları</li>
+                    <li>Bug bounty ve zafiyet bildirimi</li>
+                    <li>OSINT (Açık Kaynak İstihbaratı)</li>
+                    <li>Güvenli yazılım geliştirme</li>
+                    <li>Oyun geliştirme</li>
+                    <li>Bağımsız oyun yayıncılığı</li>
+                </ul>
+                <p><strong>Hukuki Not:</strong> NorthByte <strong>tüzel kişilik değildir</strong>. Tüm faaliyetler <strong>şahıs faaliyeti</strong> olarak yürütülür ve tüm hukuki sorumluluklar markayı kullanan şahsa aittir.</p>
+            </div>
+            
+            <!-- English Content -->
+            <div id="lang-en" class="lang-content">
+                <h3>About NorthByte</h3>
+                <p>NorthByte is a personal technology brand focused on cybersecurity, bug bounty, OSINT, game development, and publishing.</p>
+                 <ul>
+                    <li>Cybersecurity research</li>
+                    <li>Bug bounty & vulnerability disclosure</li>
+                    <li>OSINT (Open-Source Intelligence)</li>
+                    <li>Secure software development</li>
+                    <li>Game development</li>
+                    <li>Independent game publishing</li>
+                </ul>
+                <p><strong>Legal Notice:</strong> NorthByte is a <strong>brand name only</strong> and not a registered company. All activities are conducted as a <strong>sole activity</strong>, and all legal responsibilities belong to the individual operating under this brand.</p>
+            </div>
+
+            <!-- Norwegian Content -->
+            <div id="lang-no" class="lang-content">
+                <h3>Om NorthByte</h3>
+                <p>NorthByte er et personlig teknologimerke med fokus på cybersikkerhet, bug bounty, OSINT, spillutvikling og uavhengig spillpublisering.</p>
+                <ul>
+                    <li>Cybersikkerhet og sikkerhetsforskning</li>
+                    <li>Bug bounty og sårbarhetsrapportering</li>
+                    <li>OSINT (Open Source Intelligence)</li>
+                    <li>Sikker programvareutvikling</li>
+                    <li>Spillutvikling</li>
+                    <li>Uavhengig spillpublisering</li>
+                </ul>
+                <p><strong>Juridisk merknad:</strong> NorthByte er kun et <strong>merkenavn</strong>. All virksomhet drives som <strong>personlig selvstendig aktivitet</strong>, og alt juridisk og økonomisk ansvar ligger hos den individuelle utvikleren.</p>
+            </div>
+            
+            <!-- Swedish Content -->
+            <div id="lang-se" class="lang-content">
+                <h3>Om NorthByte</h3>
+                <p>NorthByte är ett personligt varumärke med fokus på cybersäkerhet, bug bounty, OSINT, spelutveckling och oberoende spelutgivning.</p>
+                 <ul>
+                    <li>Cybersäkerhet och säkerhetsforskning</li>
+                    <li>Bug bounty och sårbarhetsrapportering</li>
+                    <li>OSINT (Open Source Intelligence)</li>
+                    <li>Säker mjukvaruutveckling</li>
+                    <li>Spelutveckling</li>
+                    <li>Oberoende spelutgivning</li>
+                </ul>
+                <p><strong>Juridisk information:</strong> NorthByte är endast ett <strong>varumärke/projektnamn</strong>. Verksamheten bedrivs som <strong>enskild personlig verksamhet</strong> och allt juridiskt och ekonomiskt ansvar tillhör den individuella utvecklaren.</p>
+            </div>
+
+            <!-- Danish Content -->
+            <div id="lang-da" class="lang-content">
+                <h3>Om NorthByte</h3>
+                <p>NorthByte er et personligt teknologibrand med fokus på cybersikkerhed, bug bounty, OSINT, spiludvikling og uafhængig spiludgivelse.</p>
+                <ul>
+                    <li>Cybersikkerhedsforskning</li>
+                    <li>Bug bounty & sårbarhedsafsløring</li>
+                    <li>OSINT (Open Source Intelligence)</li>
+                    <li>Sikker softwareudvikling</li>
+                    <li>Spiludvikling</li>
+                    <li>Uafhængig spiludgivelse</li>
+                </ul>
+                <p><strong>Juridisk bemærkning:</strong> NorthByte er kun et <strong>brandnavn</strong> og ikke et registreret selskab. Alle aktiviteter udføres som <strong>personlig virksomhed</strong>, og alt juridisk ansvar tilhører den person, der opererer under dette brand.</p>
+            </div>
+
+            <!-- Icelandic Content -->
+            <div id="lang-is" class="lang-content">
+                <h3>Um NorthByte</h3>
+                <p>NorthByte er persónulegt tæknivörumerki sem einbeitir sér að netöryggi, villuleit (bug bounty), opnum upplýsingaöflun (OSINT), leikjaþróun og útgáfu.</p>
+                <ul>
+                    <li>Netöryggisrannsóknir</li>
+                    <li>Villuleit og uppljóstrun veikleika</li>
+                    <li>OSINT (Open Source Intelligence)</li>
+                    <li>Örugg hugbúnaðarþróun</li>
+                    <li>Leikjaþróun</li>
+                    <li>Óháð leikjaútgáfa</li>
+                </ul>
+                <p><strong>Lagalegur fyrirvari:</strong> NorthByte er eingöngu <strong>vörumerki</strong> en ekki skráð fyrirtæki. Öll starfsemi fer fram sem <strong>einstaklingsframtak</strong> og öll lagaleg ábyrgð hvílir á þeim einstaklingi sem starfar undir þessu merki.</p>
+            </div>
+
+            <!-- Faroese Content -->
+            <div id="lang-fo" class="lang-content">
+                <h3>Um NorthByte</h3>
+                <p>NorthByte er eitt persónligt tøknimerki við denti á kybernettrygd, bug bounty, OSINT (alment atkomuligar keldur), menning av spølum og útgávu.</p>
+                <ul>
+                    <li>Kybernettrygdargransking</li>
+                    <li>Bug bounty & kunngerð um veikleikar</li>
+                    <li>OSINT (Open Source Intelligence)</li>
+                    <li>Trygg forritamenning</li>
+                    <li>Spælmenning</li>
+                    <li>Sjálvstøðug spælútgáva</li>
+                </ul>
+                <p><strong>Lóglig fráboðan:</strong> NorthByte er bert eitt <strong>merkisnavn</strong> og ikki eitt skrásett felag. Alt virksemi verður útint sum <strong>einstaklingavirksemi</strong>, og øll løgfrøðilig ábyrgd liggur hjá tí einstaklingi, sum virkar undir hesum merki.</p>
+            </div>
+        </section>
+
+        <!-- Focus Areas Section -->
+        <section id="focus">
+            <h2>Core Activities</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Cybersecurity & OSINT</h3>
+                    <p>Ethical security research, responsible disclosure of vulnerabilities, and open-source intelligence activities.</p>
+                </div>
+                <div class="card">
+                    <h3>Bug Bounty</h3>
+                    <p>Actively participating in bug bounty programs to help secure digital assets within legal and ethical boundaries.</p>
+                </div>
+                <div class="card">
+                    <h3>Game Development</h3>
+                    <p>Creating independent games and interactive software with a focus on innovative gameplay and design.</p>
+                </div>
+                <div class="card">
+                    <h3>Indie Publishing</h3>
+                    <p>Publishing self-developed titles and collaborating with other independent creators on digital platforms.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Legal Notice Section -->
+        <section id="legal">
+            <h2>Legal Notice & Disclaimer</h2>
+            <div class="info-section">
+                 <p><strong class="brand">NorthByte</strong> is a <strong>brand name only</strong> and represents personal research and development work. All legal, financial, and contractual responsibilities belong to the individual operating under this brand. Nothing should be interpreted as corporate representation.</p>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact & Inquiries</h2>
+            <div class="info-section">
+                <p>For inquiries regarding bug bounty disclosures, cybersecurity collaboration, or game development & publishing, please note the following:</p>
+                <br>
+                <p><strong>Brand:</strong> NorthByte <br>
+                <strong>Operation Type:</strong> Individual / Sole Activity <br>
+                <strong>Fields:</strong> Cybersecurity, OSINT, Game Development, Publishing</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NorthByte. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            // Hide all content
+            document.querySelectorAll('.lang-content').forEach(div => {
+                div.classList.remove('active');
+            });
+
+            // Deactivate all tabs
+            document.querySelectorAll('.lang-tab').forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Show selected content and activate tab
+            document.getElementById('lang-' + lang).classList.add('active');
+            document.querySelector(`.lang-tab[onclick="switchLanguage('${lang}')"]`).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
