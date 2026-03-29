@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF--8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NorthByte Norway - Teknoloji & Siber Güvenlik</title>
+    <title>NorthByte Norway - Technology & Cyber Security</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
@@ -216,6 +216,43 @@
              color: var(--primary-color);
         }
 
+        /* Manifesto */
+        .manifesto-box {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .manifesto-box h3 {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+            border-bottom: 1px solid #3a3a3a;
+            padding-bottom: 0.75rem;
+        }
+        .manifesto-box h4 {
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 1.25rem 0 0.4rem 0;
+        }
+        .manifesto-box p {
+            color: var(--text-muted);
+            font-size: 0.96rem;
+            margin-top: 0;
+        }
+        .manifesto-box .png-note {
+            margin-top: 0.5rem;
+            padding: 0.7rem 1rem;
+            background: rgba(255,68,68,0.08);
+            border-left: 3px solid #ff4444;
+            border-radius: 4px;
+            font-size: 0.92rem;
+            color: #ccc;
+            font-style: italic;
+        }
+
         footer {
             text-align: center;
             padding: 2rem 0;
@@ -227,7 +264,7 @@
 
     <header>
         <div class="container">
-            <h1>North<span>Byte</span></h1>
+            <h1>North<span>Byte</span> Norway</h1>
             <p>Independent Technology, Cybersecurity, and Game Development</p>
         </div>
     </header>
@@ -235,6 +272,7 @@
     <nav>
         <a href="#about">About</a>
         <a href="#focus">Focus Areas</a>
+        <a href="#ethics">Ethics & Manifesto</a>
         <a href="#legal">Legal Notice</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -383,6 +421,69 @@
             </div>
         </section>
         
+        <!-- Ethics & Manifesto Section -->
+        <section id="ethics">
+            <h2>Ethics &amp; Manifesto</h2>
+            <div class="lang-tabs">
+                <button class="lang-tab active" onclick="switchManifesto('en')">🇬🇧 English</button>
+                <button class="lang-tab" onclick="switchManifesto('no')">🇳🇴 Norsk</button>
+                <button class="lang-tab" onclick="switchManifesto('se')">🇸🇪 Svenska</button>
+                <button class="lang-tab" onclick="switchManifesto('tr')">🇹🇷 Türkçe</button>
+            </div>
+
+            <!-- English -->
+            <div id="manifesto-en" class="manifesto-box lang-content active">
+                <h3>NORTHBYTE NORWAY LTD. &amp; NORDIC FACT SHIELD:<br>MANIFESTO OF CORPORATE ETHICS AND PERSONA NON GRATA</h3>
+                <p>As an independent and autonomous technology and defense organization, Northbyte Norway Ltd. hereby establishes its non-negotiable ethical guidelines for commercial and diplomatic cooperation:</p>
+                <h4>1. Zero Tolerance for Sexism and Exploitation (Persona Non Grata)</h4>
+                <p>We do not collaborate with any individual or entity that degrades women, uses sexist language, or actively participates in criminal exploitation networks (such as the Epstein network). Individuals who make derogatory and sexist remarks about female members of the Scandinavian monarchies, or women in general, are permanently blacklisted.</p>
+                <div class="png-note">E.g.: Boris Nikolic is hereby officially declared "Persona Non Grata" by our company due to his unethical and sexist statements regarding H.R.H. Crown Princess Mette-Marit in communications with criminal actors. Neither he nor any affiliated entities will ever be permitted to do business with us.</div>
+                <h4>2. Rejection of Media Lynching and Defense of the Presumption of Innocence</h4>
+                <p>We do not engage in public executions driven by media narratives. We strictly separate actual criminals from the innocent. We will not boycott or target individuals simply because their names appear in documents (like the Epstein files) or because they engaged in casual email correspondence, provided they had no involvement in the criminal network. H.R.H. Crown Princess Mette-Marit stands as a clear example of someone unjustly judged by the public for associations entirely devoid of criminal intent. Our doors remain open to cooperation with all actors possessing clean records.</p>
+                <h4>3. Geopolitical Independence and Peace Focus</h4>
+                <p>Northbyte Norway Ltd. operates with technological autonomy. We may engage in commercial partnerships with global technology companies, including Chinese actors, when technologically appropriate. However, we categorically refuse to do business with entities that provoke diplomatic crises, profit from war, or are involved in the global military-industrial complex.</p>
+            </div>
+
+            <!-- Norwegian -->
+            <div id="manifesto-no" class="manifesto-box lang-content">
+                <h3>NORTHBYTE NORWAY LTD. &amp; NORDIC FACT SHIELD:<br>MANIFEST FOR BEDRIFTSETIKK OG PERSONA NON GRATA</h3>
+                <p>Som en uavhengig og autonom teknologi- og forsvarsorganisasjon, fastsetter Northbyte Norway Ltd. herved sine ufravikelige etiske retningslinjer for kommersielt og diplomatisk samarbeid:</p>
+                <h4>1. Nulltoleranse for Kjønnsdiskriminering og Utnyttelse (Persona Non Grata)</h4>
+                <p>Vi samarbeider aldri med individer eller selskaper som nedvurderer kvinner, bruker kjønnsdiskriminerende språk, eller som har deltatt aktivt i kriminelle utnyttelsesnettverk (som Epstein-nettverket). Personer som har kommet med nedsettende og sexistiske kommentarer om kvinnelige medlemmer av de skandinaviske monarkiene, eller kvinner generelt, er permanent svartelistet.</p>
+                <div class="png-note">Eks: Boris Nikolic er herved erklært "Persona Non Grata" av vårt selskap på grunn av hans uetiske og sexistiske uttalelser om H.K.H. Kronprinsesse Mette-Marit i kommunikasjon med kriminelle aktører. Verken han eller selskaper knyttet til ham vil noen gang få tilgang til våre tjenester.</div>
+                <h4>2. Avvisning av Medialynsjing og Forsvar for Uskyldspresumsjonen</h4>
+                <p>Vi driver ikke med offentlig lynsjing basert på medieoppslag. Vi skiller strengt mellom faktiske kriminelle og uskyldige mennesker. Vi vil ikke boikotte eller målrette individer kun fordi deres navn dukker opp i dokumenter (som Epstein-filene) eller fordi de har hatt vanlig e-postkorrespondanse, så lenge de ikke har vært involvert i det kriminelle nettverket. H.K.H. Kronprinsesse Mette-Marit er et tydelig eksempel på en person som har blitt urettferdig dømt av offentligheten for å ha hatt kontakt, uten noen tilknytning til kriminelle handlinger. Vår dør er åpen for samarbeid med alle aktører som har rene rulleblad.</p>
+                <h4>3. Geopolitisk Uavhengighet og Fredsfokus</h4>
+                <p>Northbyte Norway Ltd. opererer med teknologisk autonomi. Vi kan inngå kommersielle partnerskap med globale teknologiselskaper, inkludert kinesiske aktører, når det er teknologisk formålstjenlig. Vi nekter imidlertid kategorisk å samarbeide med selskaper som provoserer frem diplomatiske kriser, profitterer på krig, eller er involvert i den globale krigsindustrien.</p>
+            </div>
+
+            <!-- Swedish -->
+            <div id="manifesto-se" class="manifesto-box lang-content">
+                <h3>NORTHBYTE NORWAY LTD. &amp; NORDIC FACT SHIELD:<br>MANIFEST FÖR FÖRETAGSETIK OCH PERSONA NON GRATA</h3>
+                <p>Som en oberoende och autonom teknik- och försvarsorganisation fastställer Northbyte Norway Ltd. härmed sina ovillkorliga etiska riktlinjer för kommersiellt och diplomatiskt samarbete:</p>
+                <h4>1. Nolltolerans mot Sexism och Utnyttjande (Persona Non Grata)</h4>
+                <p>Vi samarbetar aldrig med individer eller företag som nedvärderar kvinnor, använder sexistiskt språk eller som aktivt har deltagit i kriminella utnyttjandenätverk (såsom Epstein-nätverket). Personer som har fält nedsättande och sexistiska kommentarer om kvinnliga medlemmar av de skandinaviska monarkierna, eller kvinnor i allmänhet, är permanent svartlistade.</p>
+                <div class="png-note">Ex: Boris Nikolic förklaras härmed officiellt som "Persona Non Grata" av vårt företag på grund av hans oetiska och sexistiska uttalanden om H.K.H. Kronprinsessan Mette-Marit i kommunikation med kriminella aktörer. Varken han eller företag kopplade till honom kommer någonsin att få göra affärer med oss.</div>
+                <h4>2. Avvisande av Mediadrev och Försvar av Oskuldspresumtionen</h4>
+                <p>Vi ägnar oss inte åt offentliga avrättningar baserade på mediedrev. Vi drar en strikt gräns mellan faktiska brottslingar och oskyldiga. Vi kommer inte att bojkotta eller rikta in oss på individer enbart för att deras namn förekommer i dokument (som Epstein-filerna) eller för att de har haft vanlig e-postkorrespondens, så länge de inte har varit inblandade i det kriminella nätverket. H.K.H. Kronprinsessan Mette-Marit är ett tydligt exempel på en person som har blivit orättvist dömd av allmänheten för kontakter helt utan koppling till kriminella handlingar. Vår dörr är öppen för samarbete med alla aktörer som har rent mjöl i påsen.</p>
+                <h4>3. Geopolitiskt Oberoende och Fredsfokus</h4>
+                <p>Northbyte Norway Ltd. verkar med teknologisk autonomi. Vi kan ingå kommersiella partnerskap med globala teknikföretag, inklusive kinesiska aktörer, när det är teknologiskt ändamålsenligt. Vi vägrar dock kategoriskt att samarbeta med företag som provocerar fram diplomatiska kriser, tjänar pengar på krig eller är inblandade i den globala krigsindustrin.</p>
+            </div>
+
+            <!-- Turkish -->
+            <div id="manifesto-tr" class="manifesto-box lang-content">
+                <h3>NORTHBYTE NORWAY LTD. &amp; NORDIC FACT SHIELD:<br>KURUMSAL ETİK VE PERSONA NON GRATA MANİFESTOSU</h3>
+                <p>Bağımsız ve otonom bir teknoloji ve savunma organizasyonu olarak Northbyte Norway Ltd., ticari ve diplomatik işbirlikleri için taviz verilemez etik kurallarını beyan eder:</p>
+                <h4>1. Cinsiyetçiliğe ve Sömürüye Karşı Sıfır Tolerans (Persona Non Grata)</h4>
+                <p>Kadınları aşağılayan, cinsiyetçi söylemlerde bulunan veya aktif suç/sömürü ağlarına (Epstein ağı gibi) katılan hiçbir şahıs veya şirketle işbirliği yapmayız. İskandinav monarşilerinin kadın üyelerine veya herhangi bir kadına yönelik aşağılayıcı yorumlar yapan şahıslar kalıcı olarak kara listeye alınmıştır.</p>
+                <div class="png-note">Örn: Suç ağlarıyla yaptığı yazışmalarda H.K.H. Veliaht Prenses Mette-Marit hakkında ahlak dışı ve cinsiyetçi ifadeler kullanan Boris Nikolic, şirketimiz tarafından resmen "Persona Non Grata" ilan edilmiştir. Kendisi ve bağlantılı olduğu hiçbir şirket bizimle iş yapamaz.</div>
+                <h4>2. Medya Linçinin Reddi ve Masumiyet Karinesinin Savunulması</h4>
+                <p>Bizler medya gibi yargısız infaz yapmayız. Gerçek suçlular ile masumlar arasındaki çizgiyi net bir şekilde çekeriz. Sadece adı belgelerde (Epstein dosyaları vb.) geçtiği için veya suç ağına bulaşmaksızın yalnızca e-posta yazışmaları bulunduğu için kimseyi boykot etmeyiz. H.K.H. Veliaht Prenses Mette-Marit gibi, suça hiçbir iştiraki olmadığı halde yalnızca temasları yüzünden kamuoyu lincine uğrayan masumların yanındayız. Suça bulaşmamış kişi ve kurumlarla işbirliği yapmaya devam edeceğiz.</p>
+                <h4>3. Jeopolitik Bağımsızlık ve Barış Odaklılık</h4>
+                <p>Northbyte Norway Ltd. teknolojik otonomiye sahiptir. Teknolojik gereksinimler doğrultusunda Çin menşeli teknoloji şirketleri dahil olmak üzere global aktörlerle ticari işbirliği yapabiliriz. Ancak, diplomatik krizler yaratan, savaştan beslenen veya küresel savaş sanayisiyle ilişkili hiçbir kurumla iş yapmayız.</p>
+            </div>
+        </section>
+
         <!-- Legal Notice Section -->
         <section id="legal">
             <h2>Legal Notice & Disclaimer</h2>
@@ -434,23 +535,42 @@
         <p>&copy; 2024 NorthByte. All rights reserved.</p>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function switchManifesto(lang) {
+            document.querySelectorAll('[id^="manifesto-"]').forEach(div => {
+                div.classList.remove('active');
+            });
+            document.getElementById('ethics').querySelectorAll('.lang-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById('manifesto-' + lang).classList.add('active');
+            document.getElementById('ethics').querySelectorAll('.lang-tab').forEach(tab => {
+                if (tab.getAttribute('onclick').includes("'" + lang + "'")) {
+                    tab.classList.add('active');
+                }
+            });
+        }
+
         function switchLanguage(lang) {
-            // Hide all content
-            document.querySelectorAll('.lang-content').forEach(div => {
+            // Hide all about section content only
+            document.querySelectorAll('#about .lang-content').forEach(div => {
                 div.classList.remove('active');
             });
 
-            // Deactivate all tabs
-            document.querySelectorAll('.lang-tab').forEach(button => {
-                button.classList.remove('active');
+            // Deactivate all about section tabs
+            document.querySelectorAll('#about .lang-tab').forEach(tab => {
+                tab.classList.remove('active');
             });
 
-            // Show selected content and activate tab
-            document.getElementById('lang-' + lang).classList.add('active');
-            document.querySelector(`.lang-tab[onclick="switchLanguage('${lang}')"]`).classList.add('active');
+            // Show selected content
+            const target = document.getElementById('lang-' + lang);
+            if (target) target.classList.add('active');
+
+            // Activate selected tab
+            document.querySelectorAll('#about .lang-tab').forEach(tab => {
+                if (tab.getAttribute('onclick').includes("'" + lang + "'")) {
+                    tab.classList.add('active');
+                }
+            });
         }
     </script>
-
-</body>
-</html>
